@@ -25,9 +25,9 @@ allprojects {
 
     release {
         tagTemplate = '$name-$version'
-        git {
-            buildOptions = ["--dry-run"]
-        }
+        
+        buildOptions = ["--dry-run"]
+        
     }
 
     task(startmessage) << {
