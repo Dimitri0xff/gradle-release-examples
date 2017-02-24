@@ -27,7 +27,6 @@ allprojects {
         tagTemplate = '$name-$version'
         git {
             failOnPublishNeeded = false
-            requireBranch = 'release'
         }
     }
 
