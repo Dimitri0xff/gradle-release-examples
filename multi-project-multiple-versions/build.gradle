@@ -26,7 +26,8 @@ allprojects {
     release {
         tagTemplate = '$name-$version'
         git {
-            pushOptions = ["--dry-run"]
+            failOnPublishNeeded = false
+            requireBranch = 'release'
         }
     }
 
